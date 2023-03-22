@@ -2,33 +2,206 @@
 <html>
     <head>
         <meta />
-        <title></title>
-        <link rel="favicon" href="" />
-        <link rel="stylesheet" href="/assets/index.css" />
+        <title>권형준 | Full Stack Developer</title>
+        <link rel="shortcut icon" href="assets/image/fv_v3.ico" />
+        <link rel="stylesheet" href="assets/index.css" />
+
+        <script src="https://kit.fontawesome.com/c14e5d5552.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header-container">
-            <div class="">
-                <div class="header-left">
-                    <h1>권형준</h1>
-                    <h2>풀스택 웹 개발자</h2>
+        <div class="wapper">
+            <section>
+                <div class="header-container">
+                    <div class="header-left">
+                        <h1>권형준</h1>
+                        <h4>풀스택 웹 개발자</h4>
+                    </div>
+                    <div class="header-right">
+                        <ul class="icon-list no-print">
+                            <li>
+                                <a target="_blank" href="https://github.com/codetechhub" class="">
+                                    <i class="fa-brands fa-github" title="Github Link"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://code-tech.tistory.com" class="">
+                                    <i class="fa-solid fa-link" title="Gmail Link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Email: sueto4679@gmail.com</p>
+                    </div>
                 </div>
-                <div class="header-right">
-                    <ul class="">
-                        <li>
-                            <a target="_blank" href="https://github.com/codetechhub" class="">
-                                need github image
-                                <i class="github" title="Github link"></i>
-                            </a>
-                        </li>
+            </section>
+
+            <section>
+                <h2>Introduce.</h2>
+                <div class="row-container indroduce-container solid">
+                    <div class="row-left">
+                        <img class="indroduce-img" src="assets/image/Profile.png" />
+                    </div>
+                    <div class="row-right indroduce">
+                        <p>
+                            2년차 웹 개발자로 스타트업에서 웹 서비스와 백앤드, 인프라를 개발 및 운영 유지보수 하였습니다. Laravel, Node.js, MySQL, AWS, Git,
+                            Linux 등을 사용하여 코인 거래사이트 텐앤텐 및 기타 작은 프로젝트들을 개발 및 유지보수하고 AWS 인프라 구축 및 업무의 효율성을 위해
+                            오픈소스 프로젝트들을 이용하여 사내 협업 환경을 구성하였습니다.
+                        </p>
+                        <p>
+                            개인이 하고 싶은 일만 하려고 쫒아가기 보다는 회사와 팀에 도움이 되야겠다는 생각으로 개발과 인프라 및 사내 환경 구성까지 가리지 않고
+                            일을 진행하였고 회사 성장에 기여하며 기존 총인원 10~15명에서 50명 이상 규모의 회사로 같이 성장하였습니다.
+                        </p>
+                        <p>
+                            좋은 개발자가 무엇인지 좋은 소스 코드가 무엇인지 효율적으로 개발을 할 수 있도록 언제나 고민하고 있습니다. 또한 누군가의 피드백을
+                            꺼려하지 않고 팀원들과의 커뮤니케이션에 적극적인 자세로 문제를 해결해 나가는 것을 좋아하며 자신과 회사가 같이 성장을 할 수 있도록
+                            노력하며 학습하고 경험하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <h2>Experience.</h2>
+                <div class="row-container experience-container solid">
+                    <div class="row-left">
+                        <h3>텐앤텐</h3>
+                        <p>2020.03 ~ 2022.12</p>
+                    </div>
+                    <div class="row-right">
+                        <div class="project">
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    코인 거래소인 텐앤텐을 전반적으로 유지보수 하였고 AWS 클라우드 인프라를 운영하였습니다.사내 팀끼리의 협업과 효율적인 업무
+                                    진행을 위해서 협업 프로젝트 관리 툴을 설치하여 도입 하였습니다. 서버 모니터링을 위해 모니터링 시스템을 설치 및 셋팅
+                                    하였습니다. 기존 소스 보관용 정도로만 사용하던 GIT을 협업, 기록, 배포 시스템을 구성하였습니다.
+                                </p>
+                            </div>
+                            <h3>관리자 프로그램 데이터 처리 구조 변경</h3>
+                            <span class="span-role">What.</span>
+                            <p>기존 DB에 직접 붙어서 데이터 처리하던 부분을 전체 API 통신으로 데이터 처리 구조 변경</p>
+                            <span class="span-role">Why.</span>
+                            <p>ISMS 보안 심사 사항으로 관리자에서 DB 데이터 확인 및 변경의 위험성으로 인해 API 로 데이터 처리를 변경</p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                회사 인원 감소로 맡고 있지 않았던 관리자 프로그램을 추가로 관리하게 되었고 C# .NET으로 만들어져있던 관리자 프로그램에 관련하여
+                                공부하고 소스를 분석하였습니다. 이후 API 서버 송수신 모듈 구성 후 기존 DB 에서 직접 처리하던 소스 부분을 API리턴된 값으로 다시
+                                처리 하는 로직으로 전체 소스의 수정을 진행하였습니다.
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>동시접속 5000명 이상의 소켓서버 구성</h3>
+                            <span class="span-role">What.</span>
+                            <p>동시접속 5000명 이상 가능한 모바일 데이터 API 송수신 데이터 암호화 작업을 위한 소켓서버 구성</p>
+                            <span class="span-role">Why.</span>
+                            <p>API 통신시 발생할 수 있는 보안상 문제를 해결하기 위해 데이터 암호화 처리를 위해 필요한 소켓서버 구성</p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                암호화를 위해 주기적으로 랜덤한 Key 값을 현재 정상적으로 붙어있는 Client들에게만 뿌려줄 수 있는 소켓서버를 구축하고 해당
+                                소켓서버에 붙어서 데이터를 암호화 하고 처리할 수 있는 Node Client 서버 모듈을 구축하였습니다. 스트레스 테스트로 소켓서버 성능도
+                                확인하였습니다. 또한 API 서버가 PM2로 가동 시 발생하는 세션이슈를 처리하기 위해 Redis/Memcache/PM2 Message 방식으로 각각 로직
+                                구성 후 방식을 비교 분석하였습니다.
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>Git 환경 구축</h3>
+                            <span class="span-role">What.</span>
+                            <p>
+                                GIT 서버를 셋팅하고 협업 GIT FLOW를 작성하여 팀원들과 공유 또한, 보안을 위한 IP 별 로그인 계정을 제한하고 로그인 차단을 위해
+                                proxy 구성
+                            </p>
+                            <span class="span-role">Why.</span>
+                            <p>
+                                협업과정에서 필요한 커뮤니케이션과 프로젝트 소스를 조금 더 효율적으로 관리하고 문제가 있을 시 바로 피드백을 할 수 있도록 GIT
+                                사용 환경을 구성
+                            </p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                기존 GIT을 활욜하지 못했던 환경에서 Gitlab 으로 내부 GIT서버를 설치하여 구축하고 Git 사용방법과 어떠한 방식으로 프로젝트
+                                배포까지 이루어져야 효율적인지 공부하고 해당 자료를 정리하여 팀원들과 Git 사용 방법에 대해 공유하여 팀 프로젝트에
+                                적용하였습니다. 이후 보안을 위해 각 IP별 본인 계정만 로그인 할 수 있도록 node 로 proxy 서버를 구축하여 보안 기능도 추가 업데이트
+                                하였습니다.
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>모니터링 서버 구축</h3>
+                            <span class="span-role">What.</span>
+                            <p>오픈소스 모니터링 툴인 Zabbix 서버를 구축, 서버 상태, PORT DOWN 여부를 메세지로 바로 받아볼 수 있게 셋팅</p>
+                            <span class="span-role">Why.</span>
+                            <p>
+                                NODE 서버가 죽거나 서버에 문제가 발생하였을 때 모니터링이 안되서 늦게 캐치하는 부분이 생겨서 이를 보완하고자 모니터링 툴을 구축
+                            </p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                오픈소스 Zabbix를 서버에 설치 후 Clinet 설치 Script를 만들어서 모든 서버에 설치하여 모니터링을 구성했습니다. 이후 모니터링이
+                                필요한 PORT 들을 등록, 트리거 발생시 메세지 알림구성, AWS RDS 서버도 모니터링 하기 위해서 Python으로 RDS 데이터도 수집할 수 있게
+                                구성 하면서 조금 더 효율적으로 모니터링 할 수 있는 환경을 구축하였습니다.
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>프로젝트 관리 서버 구축</h3>
+                            <span class="span-role">What.</span>
+                            <p>GIT 서버를 셋팅하고 협업 GIT FLOW를 작성하여 팀원들과 공유 또한, 보안을 위한 IP 별 GIT 로그인 차단을 위해 proxy 구성</p>
+                            <span class="span-role">Why.</span>
+                            <p>
+                                협업과정에서 필요한 커뮤니케이션과 프로젝트 소스를 조금 더 효율적으로 관리하고 문제가 있을 시 바로 피드백을 할 수 있도록 GIT
+                                사용 환경을 구성
+                            </p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                기존 GIT을 잘 활용하지 못했던 환경에서 내부 Gitlab서버를 설치하여 구축하고 Git 사용방법과 어떠한 방식으로 프로젝트 배포까지
+                                이루어져야 효율적인지 공부하고 해당 자료를 정리하여 팀원들과 Git 사용 방법에 대해 공유하여 팀 프로젝트에 적용하였습니다. 이후
+                                보안을 위해 각 IP별 본인 계정만 로그인 할 수 있도록 node 로 proxy 서버를 구축하여 보안 기능도 추가 업데이트 하였습니다.
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>AWS 클라우드 작업</h3>
+                            <span class="span-role">What.</span>
+                            <p class="bottiom-0">AWS VPC 구성과 다른 리전과 VPC 피어링 설정</p>
+                            <p class="bottiom-0">AWS LoadBalancer & AutoScaling 환경 구성</p>
+                            <p class="bottiom-0">
+                                AWS CloudWatch, Lambda, EventBridge, SNS 를 활용해 로그 이벤트 및 AWS 로그인, 보안 정책 수정 시 메세지 알림 기능 구성
+                            </p>
+                            <span class="span-role">Why.</span>
+                            <p>회사 운영에 필요한 인프라를 재구성하고 효율적으로 모니터링 및 관리를 할 수 있도록 고도화</p>
+                            <span class="span-role">How.</span>
+                            <p>
+                                인스턴스들을 관리하기 편하게 하기 위해 VPC와 피어링을 재구성하였고 서버 트래픽 분산 및 과부하 시 대처를 위해 LoadBalancer &
+                                AutoScaling를 사용하며 인스턴스들을 관리하였습니다. 또한 로그 이벤트 및 AWS 로그인, 보안 정책 수정 시 메세지를 받게 설정하여 AWS
+                                계정 관리도 할 수 있게 구성하였고 위 작업들을 수행할 수 있게 AWS에 대해 지속적인 공부를 하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Skill.</h2>
+                <div class="skill-container solid">
+                    <ul>
+                        <li>Laravel ( 실제 서비스하는 웹&관리자 페이지 혼자서 개발 및 유지보수 경험 )</li>
+                        <li>JavaScript</li>
+                        <li>Jquery</li>
+                        <li>NodeJS ( 간단한 API 및 소켓서버 구축 경험 )</li>
+                        <li>MySQL</li>
+                        <li>AWS ( EC2, CloudWatch, Lambda, EventBridge, SNS, VPN, LoadBalancer, AutoScaling )</li>
+                        <li>Jenkins ( CI/CD )</li>
+                        <li>Git & Git runner ( CI/CD )</li>
                     </ul>
-                    <p>Email: <a href="" target="_blank">sueto4679@gmail.com</a></p>
-                    <p>
-                        Web:
-                        <a href="https://codetech.tistory.com" target="_blank" class="">https://codetech.tistory.com</a>
-                    </p>
                 </div>
-            </div>
+                <h2>Others.</h2>
+                <div class="other-container">
+                    <div class="project">
+                        <h3>전주대학교</h3>
+                        <p>2014.03 ~ 2020.2</p>
+                        <p>
+                            전기전자정보통신학부를 졸업하여 졸업논문으로 '아두이노를 활용한 주변 환경 수집용 드론'이라는 작품으로 드론으로 주변환경 온습도와
+                            미세먼지 값을 실시간으로 휴대폰으로 확인할 수 있는 작품을 만들었습니다. 해당 작품으로 산학협력 캡스톤디자인에서 최우수상을
+                            받았습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>
