@@ -38,14 +38,14 @@
             <section>
                 <h2>Introduce.</h2>
                 <div class="row-container indroduce-container solid">
-                    <div class="row-left">
+                    <div class="row-left no-print">
                         <img class="indroduce-img" src="assets/image/Profile.png" />
                     </div>
                     <div class="row-right indroduce">
                         <p>
                             2년차 웹 개발자로 스타트업에서 웹 서비스와 백앤드, 인프라를 개발 및 운영 유지보수 하였습니다. Laravel, Node.js, MySQL, AWS, Git,
-                            Linux 등을 사용하여 코인 거래사이트 텐앤텐 및 기타 작은 프로젝트들을 개발 및 유지보수하고 AWS 인프라 구축 및 업무의 효율성을 위해
-                            오픈소스 프로젝트들을 이용하여 사내 협업 환경을 구성하였습니다.
+                            Linux 등을 사용하여 코인 거래사이트 및 기타 작은 프로젝트들을 개발 및 유지보수하고 AWS 인프라 구축 및 업무의 효율성을 위해 오픈소스
+                            프로젝트들을 이용하여 사내 협업 환경을 구성하였습니다.
                         </p>
                         <p>
                             개인이 하고 싶은 일만 하려고 쫒아가기 보다는 회사와 팀에 도움이 되야겠다는 생각으로 개발과 인프라 및 사내 환경 구성까지 가리지 않고
@@ -58,6 +58,7 @@
                         </p>
                     </div>
                 </div>
+
                 <h2>Experience.</h2>
                 <div class="row-container experience-container solid">
                     <div class="row-left">
@@ -68,11 +69,18 @@
                         <div class="project">
                             <div class="description">
                                 <h3>Description</h3>
-                                <p>
-                                    코인 거래소인 텐앤텐을 전반적으로 유지보수 하였고 AWS 클라우드 인프라를 운영하였습니다.사내 팀끼리의 협업과 효율적인 업무
-                                    진행을 위해서 협업 프로젝트 관리 툴을 설치하여 도입 하였습니다. 서버 모니터링을 위해 모니터링 시스템을 설치 및 셋팅
-                                    하였습니다. 기존 소스 보관용 정도로만 사용하던 GIT을 협업, 기록, 배포 시스템을 구성하였습니다.
-                                </p>
+                                <ul>
+                                    <li>
+                                        Laravel로 개발된 코인 거래소인 텐앤텐을 오류 수정, 기능 추가, 고도화 작업 등 유지보수 하였고 기타 사이드 프로젝트를 개발
+                                        및 유지보수 하였습니다.
+                                    </li>
+                                    <li>NodeJs 로 API, Socket 서버 백앤드 개발을 진행하였습니다.</li>
+                                    <li>AWS 클라우드 인프라를 운영하였습니다.</li>
+                                    <li>
+                                        사내 팀끼리의 협업과 효율적인 업무 진행을 위해서 프로젝트 관리 툴, 모니터링 툴, GIT 시스템등을 도입하고 Git과 연계하여
+                                        자동배포 시스템을 구축하였습니다.
+                                    </li>
+                                </ul>
                             </div>
                             <h3>관리자 프로그램 데이터 처리 구조 변경</h3>
                             <span class="span-role">What.</span>
@@ -97,8 +105,8 @@
                             <p>
                                 암호화를 위해 주기적으로 랜덤한 Key 값을 현재 정상적으로 붙어있는 Client들에게만 뿌려줄 수 있는 소켓서버를 구축하고 해당
                                 소켓서버에 붙어서 데이터를 암호화 하고 처리할 수 있는 Node Client 서버 모듈을 구축하였습니다. 스트레스 테스트로 소켓서버 성능도
-                                확인하였습니다. 또한 API 서버가 PM2로 가동 시 발생하는 세션이슈를 처리하기 위해 Redis/Memcache/PM2 Message 방식으로 각각 로직
-                                구성 후 방식을 비교 분석하였습니다.
+                                확인하였습니다. 또한 API 서버가 PM2로 가동 시 발생하는 세션이슈를 처리하기 위해 Redis/Memcache/Proccess Message 방식으로 각각
+                                로직 구성 후 방식을 비교 분석하였습니다.
                             </p>
                         </div>
 
@@ -128,9 +136,7 @@
                             <span class="span-role">What.</span>
                             <p>오픈소스 모니터링 툴인 Zabbix 서버를 구축, 서버 상태, PORT DOWN 여부를 메세지로 바로 받아볼 수 있게 셋팅</p>
                             <span class="span-role">Why.</span>
-                            <p>
-                                NODE 서버가 죽거나 서버에 문제가 발생하였을 때 모니터링이 안되서 늦게 캐치하는 부분이 생겨서 이를 보완하고자 모니터링 툴을 구축
-                            </p>
+                            <p>서버가 죽거나 서버에 문제가 발생하였을 때 모니터링이 안되서 늦게 캐치하는 부분이 생겨서 이를 보완하고자 모니터링 툴을 구축</p>
                             <span class="span-role">How.</span>
                             <p>
                                 오픈소스 Zabbix를 서버에 설치 후 Clinet 설치 Script를 만들어서 모든 서버에 설치하여 모니터링을 구성했습니다. 이후 모니터링이
@@ -142,23 +148,21 @@
                         <div class="project">
                             <h3>프로젝트 관리 서버 구축</h3>
                             <span class="span-role">What.</span>
-                            <p>GIT 서버를 셋팅하고 협업 GIT FLOW를 작성하여 팀원들과 공유 또한, 보안을 위한 IP 별 GIT 로그인 차단을 위해 proxy 구성</p>
+                            <p>오픈소스 프로젝트 관리 툴인 Redmine 서버를 구축 및 도입 후 전 부서 직원들에게 사용방법 교육</p>
                             <span class="span-role">Why.</span>
-                            <p>
-                                협업과정에서 필요한 커뮤니케이션과 프로젝트 소스를 조금 더 효율적으로 관리하고 문제가 있을 시 바로 피드백을 할 수 있도록 GIT
-                                사용 환경을 구성
-                            </p>
+                            <p>타 부서와 업무 협의 및 프로젝트들의 업무 진행도 및 현 상황 보고를 효율적으로 하기 위해 프로젝트 관리 툴을 구축</p>
                             <span class="span-role">How.</span>
                             <p>
-                                기존 GIT을 잘 활용하지 못했던 환경에서 내부 Gitlab서버를 설치하여 구축하고 Git 사용방법과 어떠한 방식으로 프로젝트 배포까지
-                                이루어져야 효율적인지 공부하고 해당 자료를 정리하여 팀원들과 Git 사용 방법에 대해 공유하여 팀 프로젝트에 적용하였습니다. 이후
-                                보안을 위해 각 IP별 본인 계정만 로그인 할 수 있도록 node 로 proxy 서버를 구축하여 보안 기능도 추가 업데이트 하였습니다.
+                                타 부서와 업무 전달 간 오류와 보고체계, 개인별 업무 보고, 프로젝트 진행상황 파악 등 조금 더 효율적으로 업무를 진행하기 위해
+                                프로젝트 관리 툴을 구성하여 도입하였습니다. 각종 플러그인을 조사, 소스 수정을 위해 Ruby&Rails에 대한 정보를 찾아가면서 사내에
+                                맞게 서비스를 구축하였습니다. 그리고 모든 직원들에게 사용방법을 숙지시키며 교육하였습니다.
                             </p>
                         </div>
 
                         <div class="project">
                             <h3>AWS 클라우드 작업</h3>
                             <span class="span-role">What.</span>
+                            <p class="bottiom-0">AWS 인스턴스 비용 40% 이상 절감</p>
                             <p class="bottiom-0">AWS VPC 구성과 다른 리전과 VPC 피어링 설정</p>
                             <p class="bottiom-0">AWS LoadBalancer & AutoScaling 환경 구성</p>
                             <p class="bottiom-0">
@@ -179,16 +183,18 @@
                 <h2>Skill.</h2>
                 <div class="skill-container solid">
                     <ul>
-                        <li>Laravel ( 실제 서비스하는 웹&관리자 페이지 혼자서 개발 및 유지보수 경험 )</li>
+                        <li>PHP(Laravel) ( 실제 서비스한 웹&관리자 페이지 혼자서 개발 및 유지보수 경험 )</li>
                         <li>JavaScript</li>
                         <li>Jquery</li>
-                        <li>NodeJS ( 간단한 API 및 소켓서버 구축 경험 )</li>
+                        <li>NodeJS ( API 및 소켓서버, 프록시서버 구축 경험 )</li>
                         <li>MySQL</li>
                         <li>AWS ( EC2, CloudWatch, Lambda, EventBridge, SNS, VPN, LoadBalancer, AutoScaling )</li>
-                        <li>Jenkins ( CI/CD )</li>
-                        <li>Git & Git runner ( CI/CD )</li>
+                        <li>Jenkins & Git runner( CI/CD )</li>
+                        <li>Linux ( Ubuntu, Centos 설치 및 기본 설정 - 배너, sshd 정책, otp, 서버접속 알림 메세지 등, 서버 개발환경 구성 등등)</li>
+                        <li>Nginx</li>
                     </ul>
                 </div>
+
                 <h2>Others.</h2>
                 <div class="other-container">
                     <div class="project">
