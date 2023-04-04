@@ -17,6 +17,7 @@
                         <h4>풀스택 웹 개발자</h4>
                     </div>
                     <div class="header-right">
+                        <!--
                         <ul class="icon-list no-print">
                             <li>
                                 <a target="_blank" href="https://github.com/codetechhub" class="">
@@ -30,6 +31,7 @@
                                 </a>
                             </li>
                         </ul>
+                        -->
                         <p>Email: sueto4679@gmail.com</p>
                     </div>
                 </div>
@@ -66,22 +68,22 @@
                         <p>2020.03 ~ 2022.12</p>
                     </div>
                     <div class="row-right">
+                        <div class="description">
+                            <h3>Description</h3>
+                            <ul>
+                                <li>
+                                    Laravel로 개발된 코인 거래소인 텐앤텐을 오류 수정, 기능 추가, 고도화 작업 등 유지보수 하였고 기타 사이드 프로젝트를 개발 및
+                                    유지보수 하였습니다.
+                                </li>
+                                <li>NodeJs 로 API, Socket 서버 백앤드 개발을 진행하였습니다.</li>
+                                <li>AWS 클라우드 인프라를 운영하였습니다.</li>
+                                <li>
+                                    사내 팀끼리의 협업과 효율적인 업무 진행을 위해서 프로젝트 관리 툴, 모니터링 툴, GIT 시스템등을 도입하고 Git과 연계하여
+                                    자동배포 시스템을 구축하였습니다.
+                                </li>
+                            </ul>
+                        </div>
                         <div class="project">
-                            <div class="description">
-                                <h3>Description</h3>
-                                <ul>
-                                    <li>
-                                        Laravel로 개발된 코인 거래소인 텐앤텐을 오류 수정, 기능 추가, 고도화 작업 등 유지보수 하였고 기타 사이드 프로젝트를 개발
-                                        및 유지보수 하였습니다.
-                                    </li>
-                                    <li>NodeJs 로 API, Socket 서버 백앤드 개발을 진행하였습니다.</li>
-                                    <li>AWS 클라우드 인프라를 운영하였습니다.</li>
-                                    <li>
-                                        사내 팀끼리의 협업과 효율적인 업무 진행을 위해서 프로젝트 관리 툴, 모니터링 툴, GIT 시스템등을 도입하고 Git과 연계하여
-                                        자동배포 시스템을 구축하였습니다.
-                                    </li>
-                                </ul>
-                            </div>
                             <h3>관리자 프로그램 데이터 처리 구조 변경</h3>
                             <span class="span-role">What.</span>
                             <p>기존 DB에 직접 붙어서 데이터 처리하던 부분을 전체 API 통신으로 데이터 처리 구조 변경</p>
@@ -98,15 +100,15 @@
                         <div class="project">
                             <h3>동시접속 5000명 이상의 소켓서버 구성</h3>
                             <span class="span-role">What.</span>
-                            <p>동시접속 5000명 이상 가능한 모바일 데이터 API 송수신 데이터 암호화 작업을 위한 소켓서버 구성</p>
+                            <p>동시접속 5000명 이상 가능한 API 데이터 송수신 암호화 작업을 위한 소켓서버 구성</p>
                             <span class="span-role">Why.</span>
                             <p>API 통신시 발생할 수 있는 보안상 문제를 해결하기 위해 데이터 암호화 처리를 위해 필요한 소켓서버 구성</p>
                             <span class="span-role">How.</span>
                             <p>
                                 암호화를 위해 주기적으로 랜덤한 Key 값을 현재 정상적으로 붙어있는 Client들에게만 뿌려줄 수 있는 소켓서버를 구축하고 해당
                                 소켓서버에 붙어서 데이터를 암호화 하고 처리할 수 있는 Node Client 서버 모듈을 구축하였습니다. 스트레스 테스트로 소켓서버 성능도
-                                확인하였습니다. 또한 API 서버가 PM2로 가동 시 발생하는 세션이슈를 처리하기 위해 Redis/Memcache/Proccess Message 방식으로 각각
-                                로직 구성 후 방식을 비교 분석하였습니다.
+                                확인하였습니다. 또한 API 서버에서 발생하는 세션이슈를 처리하기 위해 Redis/Memcache/Proccess Message 방식으로 각각 로직 구성 후
+                                방식을 비교 분석하였습니다.
                             </p>
                         </div>
 
@@ -126,7 +128,7 @@
                             <p>
                                 기존 GIT을 활욜하지 못했던 환경에서 Gitlab 으로 내부 GIT서버를 설치하여 구축하고 Git 사용방법과 어떠한 방식으로 프로젝트
                                 배포까지 이루어져야 효율적인지 공부하고 해당 자료를 정리하여 팀원들과 Git 사용 방법에 대해 공유하여 팀 프로젝트에
-                                적용하였습니다. 이후 보안을 위해 각 IP별 본인 계정만 로그인 할 수 있도록 node 로 proxy 서버를 구축하여 보안 기능도 추가 업데이트
+                                적용하였습니다. 이후 보안을 위해 각 IP별 본인 계정만 로그인 할 수 있도록 Node 로 proxy 서버를 구축하여 보안 기능도 추가 업데이트
                                 하였습니다.
                             </p>
                         </div>
